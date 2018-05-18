@@ -1,0 +1,68 @@
+.splashscreen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.splashscreen-temp {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #f4f4f4;
+}
+.splashscreen-temp .content {
+    background: #f00015;
+    padding: 20px;
+}
+
+.content {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.spinner {
+    width: 45px;
+    height: 45px;
+    margin-top: 30px;
+    -webkit-animation: rotator 2s linear infinite;
+    -moz-animation: rotator 2s linear infinite;
+    -ms-animation: rotator 2s linear infinite;
+    animation: rotator 2s linear infinite;
+}
+
+@keyframes rotator {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(359deg);
+    }
+}
+
+@-moz-keyframes rotator {
+    0% {
+        -moz-transform: rotateZ(0deg);
+    }
+    100% {
+        -moz-transform: rotateZ(359deg);
+    }
+}
+
+@-ms-keyframes rotator {
+    0% {
+        -ms-transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(359deg);
+    }
+}
+
+.icon {
+    margin-left: 50%;
+}
+
+
+:host {
+    text-align: center;
+}
